@@ -49,7 +49,7 @@ Then use it as follows, note the the important implicit that converts jquery to 
 
     object PickerApp extends JSApp {
       def main(): Unit = {
-        // for convenience
+        // refering to an element with id = "scalaPicker"
         val jQ = jQuery("#scalaPicker")
         // construct a datepicker with some options
         jQ.datepicker(DatepickerOptions.todayHighlight(true).multidate(true))

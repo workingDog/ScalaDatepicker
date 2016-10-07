@@ -2,7 +2,7 @@
 pomExtra := {
   <scm>
     <url>https://github.com/workingDog/ScalaDatepicker</url>
-    <connection>scm:git:git@github.com:workingDog/CesiumScala.git</connection>
+    <connection>scm:git:git@github.com:workingDog/ScalaDatepicker.git</connection>
   </scm>
     <developers>
       <developer>

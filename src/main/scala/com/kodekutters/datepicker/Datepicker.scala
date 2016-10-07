@@ -8,7 +8,6 @@
 package com.kodekutters.datepicker
 
 import org.querki.jsext.{JSOptionBuilder, _}
-import org.scalajs.jquery.JQuery
 import scala.language.implicitConversions
 import scala.scalajs.js
 import scala.scalajs.js.{Any, Date, |}
@@ -43,7 +42,7 @@ import scala.scalajs.js.{Any, Date, |}
     def forceParse(v: Boolean) = jsOpt("forceParse", v)
     def assumeNearbyYear(v: Boolean | Int) = jsOpt("assumeNearbyYear", v)
     def immediateUpdates(v: Boolean) = jsOpt("immediateUpdates", v)
-    def inputs(v: Array[String] | JQuery) = jsOpt("inputs", v)
+    def inputs(v: Array[String]) = jsOpt("inputs", v)
     def keyboardNavigation(v: Boolean) = jsOpt("keyboardNavigation", v)
     def maxViewMode(v: Int | String) = jsOpt("maxViewMode", v)
     def minViewMode(v: Int | String) = jsOpt("minViewMode", v)

@@ -68,6 +68,9 @@ import scala.scalajs.js.{Any, Date, |}
     // commands with variable arguments
     def datepicker(cmd: String, args: Any*): Any = js.native
 
+    // events processing
+    def on(event: String, func: js.Function = ???): Any = js.native
+
     // aliases
     val yesterday: String = js.native // "-1d"
     val today: String = js.native     // "+0d"

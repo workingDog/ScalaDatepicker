@@ -8,9 +8,10 @@
 package com.kodekutters.datepicker
 
 import org.querki.jsext.{JSOptionBuilder, _}
+
 import scala.language.implicitConversions
 import scala.scalajs.js
-import scala.scalajs.js.{Any, Date, |}
+import scala.scalajs.js.{Any, Date, UndefOr, |}
 
 @js.native
 trait DatepickerOptions extends js.Object
@@ -102,7 +103,7 @@ trait EventAttributes extends js.Object {
 
   def dates: js.UndefOr[Array[Date]] = js.native
 
-  //  def format(ix: Option[String] = ???, format: Option[String] = ???): this.type = js.native
+  def format: js.Function2[UndefOr[Int], UndefOr[String], String] = js.native
 }
 
 @js.native

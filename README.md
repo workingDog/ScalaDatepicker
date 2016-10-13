@@ -39,7 +39,7 @@ in your build dependencies. Typical setup:
       "com.github.workingDog" %%% "scaladatepicker" % "1.0",
       "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
       "org.querki" %%% "querki-jsext" % "0.7",
-      "org.webjars" % "bootstrap-datepicker" % "1.6.1",   
+      "org.webjars.bower" % "bootstrap-datepicker" % "1.6.4",   
       "org.webjars" % "jquery" % "3.1.1"      
     )
 

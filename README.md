@@ -55,6 +55,8 @@ Then use it as follows, note the the important implicit that converts jquery to 
         jQ.datepicker(DatepickerOptions.todayHighlight(true).multidate(true))
         // use of a command with argument
         jQ.datepicker("setDate", "2016-10-08")
+        // can also take a Date 
+        jQ.datepicker("setDate", new Date(2016,10,8))
         // use of a command that returns a result
         val theDate = jQ.datepicker("getDate")
         println("theDate " + theDate)

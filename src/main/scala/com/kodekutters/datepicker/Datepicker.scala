@@ -8,6 +8,7 @@
 package com.kodekutters.datepicker
 
 import org.querki.jsext.{JSOptionBuilder, _}
+import org.scalajs.jquery.JQueryEventObject
 
 import scala.language.implicitConversions
 import scala.scalajs.js
@@ -98,7 +99,7 @@ class DatepickerOptionsBuilder(val dict: OptMap) extends JSOptionBuilder[Datepic
 }
 
 @js.native
-trait EventAttributes extends js.Object {
+trait EventAttributes extends JQueryEventObject {
   def date: Date = js.native
 
   def dates: js.UndefOr[Array[Date]] = js.native
@@ -114,9 +115,6 @@ trait Datepicker extends js.Object {
 
   // commands with variable arguments
   def datepicker(cmd: String, args: Any*): Any = js.native
-
-  // events processing
-  def on(event: String, func: js.Function1[EventAttributes, Any] = ???): Any = js.native
 
   // aliases
   // "-1d"

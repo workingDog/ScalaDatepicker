@@ -12,7 +12,8 @@ This library **ScalaDatepicker** is a Scala interface to the [bootstrap-datepick
 
 ## Dependencies
 
-This facade uses [jsext](https://github.com/jducoeur/jsext) for JSOptionBuilder support.
+This facade uses [jsext](https://github.com/jducoeur/jsext) for JSOptionBuilder support and 
+[scalajs-jquery](https://github.com/scala-js/scala-js-jquery).
 
 ## Compiling and installation 
 

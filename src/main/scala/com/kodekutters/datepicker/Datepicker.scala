@@ -1,7 +1,7 @@
 /**
   * A Scala.js facade to bootstrap-datepicker
   *
-  * Reference:  [[https://github.com/eternicode/bootstrap-datepicker]]
+  * Reference:  [[https://github.com/uxsolutions/bootstrap-datepicker]]
   *
   * Author: R. Wathelet October 2016
   */
@@ -9,9 +9,9 @@ package com.kodekutters.datepicker
 
 import org.querki.jsext.{JSOptionBuilder, _}
 import org.scalajs.jquery.JQueryEventObject
-
 import scala.language.implicitConversions
 import scala.scalajs.js
+
 import scala.scalajs.js.{Any, Date, UndefOr, |}
 
 @js.native
@@ -124,6 +124,3 @@ trait Datepicker extends js.Object {
   // "+1d"
   val tomorrow: String = js.native
 }
-
-
-

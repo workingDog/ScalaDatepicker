@@ -39,6 +39,8 @@ Then use it as follows, note the the important implicit that converts jquery to 
 
     object PickerApp extends JSApp {
       def main(): Unit = {
+      // ensure the dom is ready
+      jQuery(dom.document).ready(() => {
         // refering to an element with id = "scalaPicker"
         val jQ = jQuery("#scalaPicker")
         // construct a datepicker with some options
@@ -50,6 +52,7 @@ Then use it as follows, note the the important implicit that converts jquery to 
         // use of a command that returns a result
         val theDate = jQ.datepicker("getDate")
         println("theDate " + theDate)
+       }
       }
     }
 

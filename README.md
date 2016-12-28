@@ -6,29 +6,26 @@ This bootstrap datepicker is one of a few datepicker that allows multi-dates to 
 
 ## Dependencies
 
-This facade depends on [jsext](https://github.com/jducoeur/jsext) for JSOptionBuilder support and 
-[scalajs-jquery](https://github.com/scala-js/scala-js-jquery). 
-The original javascript [bootstrap datepicker](https://github.com/uxsolutions/bootstrap-datepicker) is also required.
+**ScalaDatepicker** version 1.1 requires Scala.js 0.6.14.
+
+The original javascript [bootstrap datepicker](https://github.com/uxsolutions/bootstrap-datepicker) is required.
 
 ## References
  
 1) [A datepicker for twitter bootstrap (@twbs)](https://github.com/uxsolutions/bootstrap-datepicker)
 
-2) [jsext](https://github.com/jducoeur/jsext)
-
 ## Usage
 
 To use **ScalaDatepicker** include this in your build.sbt file:
 
-    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.0"
+    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.1"
 
-In addition you need to include the bootstrap-datepicker, jquery and jsext  
+In addition you need to include the bootstrap-datepicker and jquery 
 in your build dependencies. Typical setup:
 
     libraryDependencies ++= Seq(
-      "com.github.workingDog" %%% "scaladatepicker" % "1.0",
-      "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
-      "org.querki" %%% "querki-jsext" % "0.7",
+      "com.github.workingDog" %%% "scaladatepicker" % "1.1",
+      "be.doeraene" %%% "scalajs-jquery" % "0.9.1",
       "org.webjars.bower" % "bootstrap-datepicker" % "1.6.4",   
       "org.webjars" % "jquery" % "3.1.1"      
     )
@@ -44,7 +41,10 @@ Then use it as follows, note the the important implicit that converts jquery to 
         // refering to an element with id = "scalaPicker"
         val jQ = jQuery("#scalaPicker")
         // construct a datepicker with some options
-        jQ.datepicker(DatepickerOptions.todayHighlight(true).multidate(true))
+        jQ.datepicker(new DatepickerOptions {
+            override val todayHighlight: js.UndefOr[Boolean] = true
+            override val multidate: js.UndefOr[Boolean | Int] = true
+         })
         // use of a command with argument
         jQ.datepicker("setDate", "2016-10-08")
         // can also take a Date 
@@ -72,12 +72,11 @@ To publish it to your local (Ivy) repository, simply type:
     
 Then include this in your build.sbt file
 
-    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.1-SNAPSHOT"
+    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.1"
 
 ## Documentations
 
-Refer to the original [bootstrap-datepicker](https://readthedocs.org/projects/bootstrap-datepicker/) documentation and 
-[jsext](https://github.com/jducoeur/jsext) for how to use the JSOptionBuilder.
+Refer to the original [bootstrap-datepicker](https://readthedocs.org/projects/bootstrap-datepicker/) documentation.
 
 ## Status
 

@@ -7,95 +7,58 @@
   */
 package com.kodekutters.datepicker
 
-import org.querki.jsext.{JSOptionBuilder, _}
 import org.scalajs.jquery.JQueryEventObject
+
 import scala.language.implicitConversions
 import scala.scalajs.js
-
+import scala.scalajs.js.annotation.ScalaJSDefined
 import scala.scalajs.js.{Any, Date, UndefOr, |}
 
-@js.native
-trait DatepickerOptions extends js.Object
 
-object DatepickerOptions extends DatepickerOptionsBuilder(noOpts)
 
-class DatepickerOptionsBuilder(val dict: OptMap) extends JSOptionBuilder[DatepickerOptions, DatepickerOptionsBuilder](new DatepickerOptionsBuilder(_)) {
+/**
+  * the Symbol options
+  */
+@ScalaJSDefined
+trait DatepickerOptions extends js.Object {
 
-  def language(v: String) = jsOpt("language", v)
-
-  def multidate(v: Boolean) = jsOpt("multidate", v)
-
-  def format(v: String) = jsOpt("format", v)
-
-  def todayHighlight(v: Boolean) = jsOpt("todayHighlight", v)
-
-  def startDate(v: Date | String) = jsOpt("startDate", v)
-
-  def autoclose(v: Boolean) = jsOpt("autoclose", v)
-
-  def beforeShowDay(v: Date | String) = jsOpt("beforeShowDay", v)
-
-  def beforeShowMonth(v: Date | String) = jsOpt("beforeShowMonth", v)
-
-  def beforeShowYear(v: Date | String) = jsOpt("beforeShowYear", v)
-
-  def beforeShowDecade(v: Date | String) = jsOpt("beforeShowDecade", v)
-
-  def beforeShowCentury(v: Date | String) = jsOpt("beforeShowCentury", v)
-
-  def calendarWeeks(v: Boolean) = jsOpt("calendarWeeks", v)
-
-  def clearBtn(v: Boolean) = jsOpt("clearBtn", v)
-
-  def container(v: String) = jsOpt("container", v)
-
-  def datesDisabled(v: Array[String]) = jsOpt("datesDisabled", v)
-
-  def daysOfWeekDisabled(v: Array[String]) = jsOpt("daysOfWeekDisabled", v)
-
-  def daysOfWeekHighlighted(v: Array[String]) = jsOpt("daysOfWeekHighlighted", v)
-
-  def disableTouchKeyboard(v: Boolean) = jsOpt("disableTouchKeyboard", v)
-
-  def enableOnReadonly(v: Boolean) = jsOpt("enableOnReadonly", v)
-
-  def endDate(v: Date | String) = jsOpt("endDate", v)
-
-  def forceParse(v: Boolean) = jsOpt("forceParse", v)
-
-  def assumeNearbyYear(v: Boolean | Int) = jsOpt("assumeNearbyYear", v)
-
-  def immediateUpdates(v: Boolean) = jsOpt("immediateUpdates", v)
-
-  def inputs(v: Array[String]) = jsOpt("inputs", v)
-
-  def keyboardNavigation(v: Boolean) = jsOpt("keyboardNavigation", v)
-
-  def maxViewMode(v: Int | String) = jsOpt("maxViewMode", v)
-
-  def minViewMode(v: Int | String) = jsOpt("minViewMode", v)
-
-  def multidate(v: Boolean | Int) = jsOpt("multidate", v)
-
-  def multidateSeparator(v: String) = jsOpt("multidateSeparator", v)
-
-  def orientation(v: String) = jsOpt("orientation", v)
-
-  def showOnFocus(v: Boolean) = jsOpt("showOnFocus", v)
-
-  def startView(v: Int | String) = jsOpt("startView", v)
-
-  def templates(v: Object) = jsOpt("templates", v)
-
-  def title(v: String) = jsOpt("title", v)
-
-  def todayBtn(v: Boolean) = jsOpt("todayBtn", v)
-
-  def toggleActive(v: Boolean) = jsOpt("toggleActive", v)
-
-  def weekStart(v: Int) = jsOpt("weekStart", v)
-
-  def zIndexOffset(v: Int) = jsOpt("zIndexOffset", v)
+  val language: js.UndefOr[String] = js.undefined
+  val format: js.UndefOr[String] = js.undefined
+  val todayHighlight: js.UndefOr[Boolean] = js.undefined
+  val startDate: js.UndefOr[Date | String] = js.undefined
+  val autoclose: js.UndefOr[Boolean] = js.undefined
+  val beforeShowDay: js.UndefOr[Date | String] = js.undefined
+  val beforeShowMonth: js.UndefOr[Date | String] = js.undefined
+  val beforeShowYear: js.UndefOr[Date | String] = js.undefined
+  val beforeShowDecade: js.UndefOr[Date | String] = js.undefined
+  val beforeShowCentury: js.UndefOr[Date | String] = js.undefined
+  val calendarWeeks: js.UndefOr[Boolean] = js.undefined
+  val clearBtn: js.UndefOr[Boolean] = js.undefined
+  val container: js.UndefOr[String] = js.undefined
+  val datesDisabled: js.UndefOr[Boolean] = js.undefined
+  val daysOfWeekDisabled: js.UndefOr[Array[String]] = js.undefined
+  val daysOfWeekHighlighted: js.UndefOr[Array[String]] = js.undefined
+  val disableTouchKeyboard: js.UndefOr[Array[String]] = js.undefined
+  val enableOnReadonly: js.UndefOr[Boolean] = js.undefined
+  val endDate: js.UndefOr[Date | String] = js.undefined
+  val forceParse: js.UndefOr[Boolean] = js.undefined
+  val assumeNearbyYear: js.UndefOr[Boolean] = js.undefined
+  val immediateUpdates: js.UndefOr[Boolean] = js.undefined
+  val inputs: js.UndefOr[Array[String]] = js.undefined
+  val keyboardNavigation: js.UndefOr[Boolean] = js.undefined
+  val maxViewMode: js.UndefOr[Int | String] = js.undefined
+  val minViewMode: js.UndefOr[Int | String] = js.undefined
+  val multidate: js.UndefOr[Boolean | Int] = js.undefined
+  val multidateSeparator: js.UndefOr[String] = js.undefined
+  val orientation: js.UndefOr[String] = js.undefined
+  val showOnFocus: js.UndefOr[Boolean] = js.undefined
+  val startView: js.UndefOr[Int | String] = js.undefined
+  val templates: js.UndefOr[Object] = js.undefined
+  val title: js.UndefOr[String] = js.undefined
+  val todayBtn: js.UndefOr[Boolean] = js.undefined
+  val toggleActive: js.UndefOr[Boolean] = js.undefined
+  val weekStart: js.UndefOr[Int] = js.undefined
+  val zIndexOffset: js.UndefOr[Int] = js.undefined
 }
 
 @js.native

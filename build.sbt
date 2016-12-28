@@ -13,10 +13,8 @@ scalaVersion := "2.11.8"
 
 crossScalaVersions := Seq("2.11.8")
 
-libraryDependencies ++= Seq(
-  "org.querki" %%% "querki-jsext" % "0.7",
-  "be.doeraene" %%% "scalajs-jquery" % "0.9.0"
-)
+libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.9.1"
+
 
 skip in packageJSDependencies := false
 

@@ -72,7 +72,7 @@ To publish it to your local (Ivy) repository, simply type:
     
 Then include this in your build.sbt file
 
-    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.1"
+    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.2-SNAPSHOT"
 
 ## Documentations
 

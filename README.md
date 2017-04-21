@@ -8,6 +8,8 @@ This bootstrap datepicker is one of a few datepicker that allows multi-dates to 
 
 **ScalaDatepicker** version 1.1 requires Scala.js 0.6.14.
 
+This **ScalaDatepicker** version 1.2-SNAPSHOT requires Scala.js 0.6.15.
+
 The original javascript [bootstrap datepicker](https://github.com/uxsolutions/bootstrap-datepicker) is required.
 
 ## References

@@ -3,7 +3,7 @@
   *
   * Reference:  [[https://github.com/uxsolutions/bootstrap-datepicker]]
   *
-  * Author: R. Wathelet October 2016
+  * Author: R. Wathelet
   */
 package com.kodekutters.datepicker
 
@@ -17,7 +17,7 @@ import scala.scalajs.js.{Any, Date, UndefOr, |}
 
 
 /**
-  * the Symbol options
+  * the Datepicker options, compatible with version: "1.7.0-RC2"
   */
 @ScalaJSDefined
 trait DatepickerOptions extends js.Object {
@@ -35,14 +35,15 @@ trait DatepickerOptions extends js.Object {
   val calendarWeeks: js.UndefOr[Boolean] = js.undefined
   val clearBtn: js.UndefOr[Boolean] = js.undefined
   val container: js.UndefOr[String] = js.undefined
-  val datesDisabled: js.UndefOr[Boolean] = js.undefined
-  val daysOfWeekDisabled: js.UndefOr[Array[String]] = js.undefined
-  val daysOfWeekHighlighted: js.UndefOr[Array[String]] = js.undefined
-  val disableTouchKeyboard: js.UndefOr[Array[String]] = js.undefined
+  val datesDisabled: js.UndefOr[String | Array[String]] = js.undefined
+  val daysOfWeekDisabled: js.UndefOr[String | Array[String]] = js.undefined
+  val daysOfWeekHighlighted: js.UndefOr[String | Array[String]] = js.undefined
+  val defaultViewDate: js.UndefOr[Object] = js.undefined
+  val disableTouchKeyboard: js.UndefOr[Boolean] = js.undefined
   val enableOnReadonly: js.UndefOr[Boolean] = js.undefined
   val endDate: js.UndefOr[Date | String] = js.undefined
   val forceParse: js.UndefOr[Boolean] = js.undefined
-  val assumeNearbyYear: js.UndefOr[Boolean] = js.undefined
+  val assumeNearbyYear: js.UndefOr[Boolean | Int] = js.undefined
   val immediateUpdates: js.UndefOr[Boolean] = js.undefined
   val inputs: js.UndefOr[Array[String]] = js.undefined
   val keyboardNavigation: js.UndefOr[Boolean] = js.undefined
@@ -55,7 +56,7 @@ trait DatepickerOptions extends js.Object {
   val startView: js.UndefOr[Int | String] = js.undefined
   val templates: js.UndefOr[Object] = js.undefined
   val title: js.UndefOr[String] = js.undefined
-  val todayBtn: js.UndefOr[Boolean] = js.undefined
+  val todayBtn: js.UndefOr[Boolean | String] = js.undefined
   val toggleActive: js.UndefOr[Boolean] = js.undefined
   val weekStart: js.UndefOr[Int] = js.undefined
   val zIndexOffset: js.UndefOr[Int] = js.undefined

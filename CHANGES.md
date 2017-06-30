@@ -5,7 +5,7 @@ Change Log
 
 
 
-## changes in 1.2 for Datepicker for Bootstrap v1.7.0-RC3
+## changes in 1.2 for Datepicker for Bootstrap v1.7.0
 * requires scala.js-0.6.18
 * requires scala 2.12.2
 

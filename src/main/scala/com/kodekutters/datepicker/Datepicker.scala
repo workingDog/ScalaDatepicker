@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.ScalaJSDefined
 import scala.scalajs.js.{Any, Date, UndefOr, |}
 
 /**
-  * the Datepicker options, compatible with version: "1.7.0-RC3"
+  * the Datepicker options, compatible with version: "1.7.0"
   */
 @ScalaJSDefined
 trait DatepickerOptions extends js.Object {

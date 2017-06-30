@@ -1,0 +1,12 @@
+//-----------publish a project-----------------------------------------------------
+
+// to deploy your artifact to staging repository at Sonatype
+sbt publishSigned
+(you will need to enter the pass phrase)
+
+// then check things are correct at: https://oss.sonatype.org/
+login as workingdog and look at the staging repos
+
+
+// close and promote at once
+sbt sonatypeRelease

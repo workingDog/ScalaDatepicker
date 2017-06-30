@@ -9,15 +9,12 @@ package com.kodekutters.datepicker
 
 import org.scalajs.jquery.JQueryEventObject
 
-import scala.language.implicitConversions
 import scala.scalajs.js
 import scala.scalajs.js.annotation.ScalaJSDefined
 import scala.scalajs.js.{Any, Date, UndefOr, |}
 
-
-
 /**
-  * the Datepicker options, compatible with version: "1.7.0-RC2"
+  * the Datepicker options, compatible with version: "1.7.0-RC3"
   */
 @ScalaJSDefined
 trait DatepickerOptions extends js.Object {

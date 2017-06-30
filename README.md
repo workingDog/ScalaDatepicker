@@ -8,7 +8,7 @@ This bootstrap datepicker is one of a few datepicker that allows multi-dates to 
 
 **ScalaDatepicker** version 1.1 requires Scala.js 0.6.14.
 
-This **ScalaDatepicker** version 1.2-SNAPSHOT requires Scala.js 0.6.15.
+This **ScalaDatepicker** version 1.2 requires Scala.js 0.6.18.
 
 The original javascript [bootstrap datepicker](https://github.com/uxsolutions/bootstrap-datepicker) is required.
 
@@ -20,16 +20,16 @@ The original javascript [bootstrap datepicker](https://github.com/uxsolutions/bo
 
 To use **ScalaDatepicker** include this in your build.sbt file:
 
-    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.1"
+    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.2"
 
 In addition you need to include the bootstrap-datepicker and jquery 
 in your build dependencies. Typical setup:
 
     libraryDependencies ++= Seq(
-      "com.github.workingDog" %%% "scaladatepicker" % "1.1",
+      "com.github.workingDog" %%% "scaladatepicker" % "1.2",
       "be.doeraene" %%% "scalajs-jquery" % "0.9.1",
-      "org.webjars.bower" % "bootstrap-datepicker" % "1.6.4",   
-      "org.webjars" % "jquery" % "3.1.1"      
+      "org.webjars.bower" % "bootstrap-datepicker" % "1.7.0",   
+      "org.webjars" % "jquery" % "3.2.1"      
     )
 
 Then use it as follows, note the the important implicit that converts jquery to the required type: 
@@ -66,7 +66,7 @@ To compile and generate a javascript file from the source code:
 
     sbt fullOptJS 
 
-The javascript file (scaladatepicker-opt.js) will be in the "./target/scala-2.11" directory.
+The javascript file (scaladatepicker-opt.js) will be in the "./target/scala-2.12" directory.
 
 To publish it to your local (Ivy) repository, simply type:
 
@@ -74,7 +74,7 @@ To publish it to your local (Ivy) repository, simply type:
     
 Then include this in your build.sbt file
 
-    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.2-SNAPSHOT"
+    libraryDependencies += "com.github.workingDog" %%% "scaladatepicker" % "1.3-SNAPSHOT"
 
 ## Documentations
 

@@ -9,12 +9,11 @@ version := (version in ThisBuild).value
 
 scalaJSStage in Global := FullOptStage // FastOptStage //
 
-scalaVersion := "2.11.11"
+scalaVersion := "2.12.2"
 
-crossScalaVersions := Seq("2.11.11")
+crossScalaVersions := Seq("2.12.2")
 
 libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.9.1"
-
 
 skip in packageJSDependencies := false
 
